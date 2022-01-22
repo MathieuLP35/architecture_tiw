@@ -1,10 +1,15 @@
 let modal = document.getElementById("myModal");
 
-let btn = document.getElementById("myBtn");
+let btnNav = document.getElementById("contactBtnNav");
+let btnFooter = document.getElementById("contactBtnFooter");
 
 let span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btnNav.onclick = function() {
+  modal.style.display = "block";
+}
+
+btnFooter.onclick = function() {
   modal.style.display = "block";
 }
 
