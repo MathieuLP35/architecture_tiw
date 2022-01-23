@@ -172,7 +172,7 @@ textarea{
     left: 50%;
     bottom: 10%;
     transform: translate(-50%, 10%);
-    background-color: rgba(176, 141, 107, 0.9);
+    background-color: rgba(176, 142, 107, 0.9);
     text-align: center;
     color:var(--white);
     padding: 15px;
@@ -224,10 +224,10 @@ textarea{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
-.card{
+#flip-card{
     width: 100%;
     display: inherit;
     justify-content: space-around;
@@ -289,12 +289,84 @@ textarea{
     padding-bottom: 10px;
 }
 
+/* OBJECTIF */
+#objectif{
+    background-color: var(--brown2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#objectif h2{
+    padding: 10px 0;
+}
+
+#card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.card {
+    position: relative;
+    background-color: rgba(74, 58, 16, 0.3);
+    transition: 0.3s;
+    width: 400px;
+    height: 20%;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin: 40px 40px 40px 40px;
+}
+
+.card:hover {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgba(74, 58, 16, 0.5);
+    transition: 0.3s;
+    width: 400px;
+    height: 20%;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin: 40px 40px 40px 40px;
+}
+
+.card ul{
+    list-style-type: none;
+}
+
+.card li{
+    margin: 10px 0;
+}
+
+.leaf{
+    width: 50px;
+    padding: 5px;
+}
+
+.l-hight{
+    transform: rotate(35deg);
+    position: absolute;
+    top: -25px;
+    left: 45%;
+}
+
+.l-low{
+    transform: rotate(-130deg);
+    position: absolute;
+    bottom: -25px;
+    left: 45%;
+}
+
 
 /* PRE-FOOTER */
 #prefooter{
     background-color: var(--lightyellow);
-    margin: 50px 0 0;
-    padding: 50px 0;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -458,6 +530,25 @@ textarea{
     padding: 20px 16px;
 }
 
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 /* MENU BURGER */
 #header_menu label{
 	display: none;
@@ -500,23 +591,4 @@ textarea{
 
 .dashicons-menu:before {
     content: "\f333"
-}
-
-/* Scrollbar */
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-/* Hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
 }
